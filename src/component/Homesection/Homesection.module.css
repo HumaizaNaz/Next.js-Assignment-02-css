@@ -1,0 +1,134 @@
+/* Homesection.module.css */
+
+/* Section with background image and blending */
+.section-bg {
+    background-image: url('/res.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f472b6; /* bg-pink-500 */
+    background-blend-mode: multiply;
+  }
+  
+  /* Wrapper container with max width and text alignment */
+  .container {
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px; /* max-w-screen-xl */
+    text-align: center;
+    padding-top: 6rem; /* py-24 */
+    padding-bottom: 6rem; /* py-24 */
+  }
+  
+  /* Larger padding for larger screens */
+  @media (min-width: 1024px) {
+    .container {
+      padding-top: 14rem; /* lg:py-56 */
+      padding-bottom: 14rem; /* lg:py-56 */
+    }
+  }
+  
+  /* Heading styles */
+  .heading {
+    margin-bottom: 1rem; /* mb-4 */
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 800; /* font-extrabold */
+    letter-spacing: 0.05em; /* tracking-tight */
+    line-height: 1.25; /* leading-none */
+    color: #e5e7eb; /* text-gray-300 */
+  }
+  
+  /* Adjustments for medium screens */
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 3rem; /* md:text-5xl */
+    }
+  }
+  
+  /* Adjustments for large screens */
+  @media (min-width: 1024px) {
+    .heading {
+      font-size: 3.75rem; /* lg:text-6xl */
+    }
+  }
+  
+  /* Paragraph styling */
+  .paragraph {
+    margin-bottom: 2rem; /* mb-8 */
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 400; /* font-normal */
+    color: #ec4899; /* text-pink-500 */
+  }
+  
+  /* Adjustments for larger screens */
+  @media (min-width: 1024px) {
+    .paragraph {
+      font-size: 1.25rem; /* lg:text-xl */
+      padding-left: 4rem; /* lg:px-48 */
+      padding-right: 4rem; /* lg:px-48 */
+    }
+  }
+  
+  /* Link button styling */
+  .button-primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.25rem; /* py-3 px-5 */
+    font-size: 1rem; /* text-base */
+    font-weight: 500; /* font-medium */
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem; /* rounded-lg */
+    background-color: #ec4899; /* bg-pink-500 */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button-primary:hover {
+    background-color: white;
+    color: #ec4899; /* hover:text-pink-500 */
+  }
+  
+  .button-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3); /* focus:ring-4 focus:ring-blue-300 */
+  }
+  
+  /* Secondary link button */
+  .button-secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.25rem; /* py-3 px-5 */
+    font-size: 1rem; /* text-base */
+    font-weight: 500; /* font-medium */
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem; /* rounded-lg */
+    border: 1px solid white; /* border-white */
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .button-secondary:hover {
+    color: #ec4899; /* hover:text-pink-500 */
+    border-color: #ec4899; /* hover:border-pink-500 */
+  }
+  
+  .button-secondary:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(107, 114, 128, 0.5); /* focus:ring-4 focus:ring-gray-400 */
+  }
+  
+  /* Section for the Fastfoodinfo component */
+  .fastfood-info-section {
+    padding-top: 6.25rem; /* py-[100px] */
+    padding-bottom: 6.25rem; /* py-[100px] */
+  }
+  
+  /* Flexbox container for aligning Fastfoodinfo */
+  .fastfood-info-container {
+    display: flex;
+    justify-content: center;
+  }
+  

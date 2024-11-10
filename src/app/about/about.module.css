@@ -1,0 +1,122 @@
+/* Footer.module.css */
+
+.section {
+    padding-top: 2.5rem; /* pt-10 */
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 640px) {
+    .section {
+      padding-top: 4rem; /* sm:pt-16 */
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .section {
+      padding-top: 4rem; /* 2xl:pt-16 */
+    }
+  }
+  
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* sm:px-6 */
+    padding-right: 1rem; /* sm:px-6 */
+    max-width: 7xl;
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* lg:px-8 */
+      padding-right: 2rem; /* lg:px-8 */
+    }
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr; /* grid-cols-1 */
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+    }
+  }
+  
+  .heading {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: bold;
+    color: white;
+    line-height: 1.25;
+  }
+  
+  @media (min-width: 640px) {
+    .heading {
+      font-size: 2.25rem; /* sm:text-4xl */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .heading {
+      font-size: 3rem; /* lg:text-5xl */
+    }
+  }
+  
+  .paragraph {
+    max-width: 32rem; /* max-w-lg */
+    margin-top: 1rem; /* mt-3 */
+    font-size: 1.25rem; /* text-xl */
+    line-height: 1.75;
+    color: #ec4899; /* text-pink-500 */
+  }
+  
+  @media (min-width: 768px) {
+    .paragraph {
+      margin-top: 2rem; /* md:mt-8 */
+    }
+  }
+  
+  .link {
+    font-size: 1.25rem; /* text-xl */
+    color: white;
+    transition: all 0.2s;
+  }
+  
+  .link:hover {
+    color: #38bdf8; /* text-sky-500 */
+  }
+  
+  .image-absolute {
+    position: absolute;
+   
+    bottom: 0;
+    margin-bottom: -12rem; /* -mb-48 */
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  
+  .image-relative {
+    position: relative;
+    width: 100%;
+    max-width: 24rem; /* xl:max-w-lg */
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: bottom;
+    transition: all 0.3s ease;
+  }
+  
+  @media (min-width: 1536px) {
+    .image-relative {
+      transform: scale(1.1); /* 2xl:scale-110 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .image-relative {
+      max-width: 30rem; /* Adjusting image size for larger screens */
+    }
+  }
+  
+  

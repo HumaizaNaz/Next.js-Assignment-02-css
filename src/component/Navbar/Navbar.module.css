@@ -1,0 +1,142 @@
+.navbarContainer {
+    width: 100%;
+    background-color: black;
+    border-bottom: 4px solid #ff1493;
+    position: relative;
+    z-index: 50;
+  }
+  
+  .navbar {
+    max-width: 1280px;
+    margin: auto;
+    padding: 10px 20px;
+  }
+  
+  .flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoImage {
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Navigation Links */
+  .navLinks ul {
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+  }
+  
+  .navLinks ul li a {
+    color: #ff1493;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .navLinks ul li a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  /* Auth Buttons */
+  .authButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .signUpButton, .loginButton {
+    padding: 8px 20px;
+    font-weight: 600;
+    border: 2px solid #ff1493;
+    color: #ff1493;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.3s;
+  }
+  
+  .signUpButton:hover {
+    color: white;
+  }
+  
+  .loginButton {
+    background-color: #ff1493;
+    color: white;
+  }
+  
+  .loginButton:hover {
+    background-color: transparent;
+    color: #ff1493;
+  }
+  
+  /* Mobile Menu Toggle */
+  .mobileMenuToggle {
+    display: none;
+  }
+  
+  /* Mobile Menu */
+  .mobileMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .mobileMenuContent {
+    padding: 20px;
+  }
+  
+  .mobileMenu ul {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .mobileMenu ul li a {
+    color: #ff1493;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+  
+  .mobileMenu ul li a:hover {
+    color: white;
+  }
+  
+  .mobileAuthButtons {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .hideOnMobile {
+      display: none;
+    }
+  
+    .mobileMenuToggle {
+      display: block;
+    }
+  
+    .navbarContainer {
+      position: fixed;
+    }
+  }
+  

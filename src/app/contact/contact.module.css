@@ -1,0 +1,107 @@
+/* contact.module.css */
+
+.section {
+    background-color: black;
+  }
+  
+  .container {
+    max-width: 1280px; /* equivalent to max-w-7xl */
+    margin: 0 auto;
+    padding: 4rem 1rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 1.875rem; /* equivalent to text-3xl */
+    font-weight: 800; /* equivalent to font-extrabold */
+    color: white;
+  }
+  
+  .subtitle {
+    margin-top: 1rem;
+    font-size: 1.125rem; /* equivalent to text-lg */
+    color: #9ca3af; /* equivalent to text-gray-400 */
+  }
+  
+  .grid {
+    display: grid;
+    gap: 2rem; /* equivalent to gap-8 */
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .map {
+    border-radius: 0.5rem; /* equivalent to rounded-lg */
+    overflow: hidden;
+  }
+  
+  .iframe {
+    width: 100%;
+    height: 480px;
+    border: none;
+  }
+  
+  .card {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 0.5rem; /* equivalent to rounded-lg */
+    overflow: hidden;
+  }
+  
+  .card-header,
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-header h3,
+  .card-body h3 {
+    font-size: 1.125rem; /* equivalent to text-lg */
+    font-weight: 500; /* equivalent to font-medium */
+    color: #ec4899; /* equivalent to text-pink-500 */
+  }
+  
+  .card-body p {
+    margin-top: 0.25rem;
+    color: white;
+  }
+  
+  .card-body .border-top {
+    border-top: 1px solid #e5e7eb; /* equivalent to border-t border-gray-200 */
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 1.5rem; /* equivalent to sm:px-6 */
+      padding-right: 1.5rem; /* equivalent to sm:px-6 */
+    }
+  
+    .container-lg {
+      padding-top: 5rem; /* equivalent to lg:py-20 */
+      padding-bottom: 5rem; /* equivalent to lg:py-20 */
+      padding-left: 2rem; /* equivalent to lg:px-8 */
+      padding-right: 2rem; /* equivalent to lg:px-8 */
+    }
+  
+    .grid-cols-1 {
+      grid-template-columns: repeat(2, 1fr); /* equivalent to md:grid-cols-2 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container-lg {
+      padding-top: 5rem; /* equivalent to lg:py-20 */
+      padding-bottom: 5rem; /* equivalent to lg:py-20 */
+      padding-left: 2rem; /* equivalent to lg:px-8 */
+      padding-right: 2rem; /* equivalent to lg:px-8 */
+    }
+  }
+  

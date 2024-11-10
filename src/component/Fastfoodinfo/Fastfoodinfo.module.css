@@ -1,0 +1,147 @@
+/* General styling for the button */
+.order-button {
+    display: block;
+    background-color: #ec4899; /* Pink */
+    color: white;
+    padding: 10px 40px; /* Adjust padding to match the Tailwind size */
+    border-radius: 0.5rem;
+    font-size: 0.875rem; /* Text size: text-sm */
+    font-weight: 500; /* font-medium */
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-button:hover {
+    background-color: #b91c1c; /* Darker Red */
+  }
+  
+  .order-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.5); /* focus:ring-4 focus:ring-red-300 */
+  }
+  
+  .dark .order-button {
+    background-color: #ef4444; /* Dark background */
+  }
+  
+  .dark .order-button:hover {
+    background-color: #dc2626; /* Darker Red on hover */
+  }
+  
+  /* Modal styles */
+  .modal {
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    margin-top: 1rem;
+  }
+  
+  .modal-content {
+    position: relative;
+    padding: 1rem;
+    max-width: 42rem; /* max-w-2xl */
+    max-height: 100%;
+  }
+  
+  .modal-inner {
+    background-color: white;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #d1d5db;
+  }
+  
+  .modal-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827; /* Text gray-900 */
+  }
+  
+  .modal-header button {
+    background-color: transparent;
+    color: #6b7280; /* Gray */
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.375rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    padding: 1rem;
+  }
+  
+  .modal-footer {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .modal-footer .order-button {
+    background-color: #ef4444;
+    color: white;
+    margin-right: 1rem;
+  }
+  
+  .modal-footer .order-button:hover {
+    background-color: #b91c1c;
+  }
+  
+  .modal-footer .close-button {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    background-color: white;
+    border-radius: 0.375rem;
+    border: 1px solid #e5e7eb;
+    color: #4b5563;
+  }
+  
+  .modal-footer .close-button:hover {
+    background-color: #f3f4f6;
+    color: #b91c1c;
+  }
+  
+  .modal-footer .close-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(229, 231, 235, 0.5);
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 640px) {
+    .order-button {
+      padding: 10px 20px;
+    }
+  
+    .modal-content {
+      padding: 0.5rem;
+    }
+  
+    .modal-header h3 {
+      font-size: 1.125rem;
+    }
+  
+    .modal-footer {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .modal-footer .order-button {
+      margin-bottom: 0.5rem;
+    }
+  
+    .modal-footer .close-button {
+      width: 100%;
+    }
+  }
+  
+  

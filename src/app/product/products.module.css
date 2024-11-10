@@ -1,0 +1,102 @@
+/* Base styles for the grid */
+#Projects {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Styling for individual product cards */
+  .product-card {
+    width: 100%;
+    max-width: 18rem; /* Equivalent to sm:w-72 */
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: cover;
+  }
+  
+  .product-details {
+    padding: 1rem;
+  }
+  
+  .product-category {
+    color: #9ca3af;
+    margin-right: 0.75rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  
+  .product-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .product-price {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 0.75rem;
+  }
+  
+  .product-old-price {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-left: 0.5rem;
+  }
+  
+  .product-cart-icon {
+    margin-left: auto;
+  }
+  
+  .product-cart-icon svg {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (min-width: 640px) {
+    #Projects {
+      grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    #Projects {
+      grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #Projects {
+      grid-template-columns: repeat(3, 1fr); /* lg:grid-cols-3 */
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    #Projects {
+      grid-template-columns: repeat(3, 1fr); /* xl:grid-cols-3 */
+    }
+  }
+  

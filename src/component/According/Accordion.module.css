@@ -1,0 +1,99 @@
+.accordion-container {
+  padding-top: 4rem; /* py-16 */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+}
+
+@media (min-width: 640px) {
+  .accordion-container {
+    padding-left: 2rem; /* sm:px-8 */
+    padding-right: 2rem; /* sm:px-8 */
+  }
+}
+
+@media (min-width: 768px) {
+  .accordion-container {
+    padding-left: 3rem; /* md:px-12 */
+    padding-right: 3rem; /* md:px-12 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .accordion-container {
+    padding-left: 4rem; /* lg:px-16 */
+    padding-right: 4rem; /* lg:px-16 */
+  }
+}
+
+@media (min-width: 1280px) {
+  .accordion-container {
+    padding-left: 5rem; /* xl:px-20 */
+    padding-right: 5rem; /* xl:px-20 */
+  }
+}
+
+/* Accordion Button */
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 500; /* font-medium */
+  border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+  background-color: #ec4899; /* bg-pink-500 */
+  color: #000; /* text-black */
+  padding-top: 1rem; /* py-4 */
+  padding-bottom: 1rem; /* py-4 */
+  padding-left: 1.25rem; /* px-5 */
+  padding-right: 1.25rem; /* px-5 */
+  gap: 0.75rem;
+}
+
+.accordion-button svg {
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
+  transition: transform 0.2s ease;
+}
+
+.accordion-button.expanded svg {
+  transform: rotate(180deg);
+}
+
+/* Accordion Body */
+.accordion-body {
+  padding-top: 1.25rem; /* py-5 */
+  padding-bottom: 1.25rem; /* py-5 */
+  border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+}
+
+/* Text Styles */
+.accordion-body p {
+  margin-bottom: 0.5rem; /* mb-2 */
+  color: #111827; /* text-black */
+}
+
+.accordion-body a {
+  color: #ec4899; /* text-pink-600 */
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .accordion-button {
+    background-color: #1f2937; /* dark:bg-gray-900 */
+    color: #f3f4f6; /* dark:text-white */
+  }
+
+  .accordion-body p {
+    color: #d1d5db; /* dark:text-gray-400 */
+  }
+
+  .accordion-button.expanded svg {
+    stroke: #f3f4f6; /* dark:text-white */
+  }
+
+  .accordion-body a {
+    color: #ec4899; /* text-pink-600 */
+  }
+}
+
+  
